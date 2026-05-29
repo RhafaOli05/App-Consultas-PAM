@@ -25,16 +25,9 @@ export function HomeScreen({ navigation }) {
 
         <TouchableOpacity 
           style={styles.navButton} 
-          onPress={() => navigation.navigate('Usuario-especifico')}
-        >
-          <Text style={generalStyles.buttonText}>Ver Seu Perfil</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity 
-          style={styles.navButton} 
           onPress={() => navigation.navigate('Usuario-tarefas')}
         >
-          <Text style={generalStyles.buttonText}>Suas Tarefas</Text>
+          <Text style={generalStyles.buttonText}>Usuários e Tarefas</Text>
         </TouchableOpacity>
 
         <TouchableOpacity 
@@ -42,6 +35,13 @@ export function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('Desenvolvedores')}
         >
           <Text style={generalStyles.buttonText}>Desenvolvedores</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity 
+          style={styles.navButton} 
+          onPress={() => navigation.navigate('Programadoras')}
+        >
+          <Text style={generalStyles.buttonText}>Programadoras do APP</Text>
         </TouchableOpacity>
 
       </View>
